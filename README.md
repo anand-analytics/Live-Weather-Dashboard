@@ -148,3 +148,5 @@ Just like traffic lights prevent accidents, AQI alerts help users make **health-
 ## 📌 Acknowledgments
 - Dashboard concept inspired by **The Developer (YouTube)**
 - Weather data powered by **Weather API**
+
+![Alt text here](https://github.com/anand-analytics/Live-Weather-Dashboard/blob/main/Snapshot%20of%20Weather%20Dashboard.png)
