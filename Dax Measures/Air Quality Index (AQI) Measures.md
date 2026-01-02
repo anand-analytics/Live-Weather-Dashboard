@@ -37,5 +37,23 @@ SWITCH(
     "Stay indoors, wear mask if outside"
 )
 ```
+### AQI Color Code
+**Purpose:**  
+Drives conditional formatting by assigning color codes based on AQI severity.
+```DAX
+PM10_Color =
+VAR AQI =
+    ROUND(SELECTEDVALUE('Current'[current.air_quality.pm10]), 0)
+RETURN
+SWITCH(
+    TRUE(),
+    AQI <= 50, "#43d946",
+    AQI <= 100, "#fff570",
+    AQI <= 150, "#ff9800",
+    AQI <= 200, "#d99343",
+    AQI <= 300, "#ff5b0f",
+    "#d95243"
+)
+```
 
 
